@@ -1,0 +1,47 @@
+:root {
+    --primary-orange: hsl(26, 100%, 55%);
+    --secondary--pale-orange: hsl(25, 100%, 94%);
+    --dark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    --Black: hsl(0, 0%, 0%); /* (with 75% opacity for lightbox background): */
+}
+
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+}
+
+body {
+    padding: 2em 8%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2em;
+    border-bottom: 1px solid rgb(201, 200, 200);
+}
+
+.header__section1, .header__section2 {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 1.5em;
+}
+
+.header__link {
+    margin: 0px 1em;
+    text-decoration: none;
+}
+
+.avatar__image {
+    height: 3em;
+    margin-left: 2.75em;
+}
