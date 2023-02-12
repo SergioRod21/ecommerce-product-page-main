@@ -31,6 +31,10 @@ header {
     align-items: center;
 }
 
+.menu__icon {
+    display: none;
+}
+
 .logo {
     margin-right: 1.5em;
 }
@@ -62,9 +66,17 @@ header {
     border-radius: 15px;
 }
 
+
+
+
 .main-image {
+    position: relative;
     height: 26em;
     margin-bottom: 2em;
+}
+
+.back__button, .next__button {
+    display: none;
 }
 
 .carousel__container {
