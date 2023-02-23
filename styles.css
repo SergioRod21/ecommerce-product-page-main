@@ -26,6 +26,10 @@ header {
     border-bottom: 1px solid var(--Grayish-blue);
 }
 
+.hidden {
+    display: none !important;
+}
+
 .header__section1, .header__section2 {
     display: flex;
     align-items: center;
@@ -40,15 +44,113 @@ header {
 }
 
 .header__link {
+    color: var(--Black);
     margin: 0px 1em;
     text-decoration: none;
 }
 
 
+.quantity-cart__container {
+    position: relative;
+}
 
 .cart__quantity {
+    color: var(--White);
+    background-color: var(--primary-orange);
+    border-radius: 25px;
+    margin: 0px;
     position: absolute;
-    right: 0;
+    right: -10px;
+    z-index: 1;
+    width: 95%;
+    bottom: -0.75em;
+    height: 1.10em;
+    font-size: 16px;
+}
+
+.open-cart__container {
+    display: grid;
+    grid-template-rows: 25% 1fr;
+    background-color: var(--White);
+    box-shadow: 0px 19px 20px 1px rgb(0 0 0 / 27%);
+    position: absolute;
+    height: 14em;
+    width: 20em;
+    margin-top: 170%;
+    right: -600%;
+    margin-right: 5vw;
+    padding: 1em 1.5em;
+    z-index: 2;
+}
+
+.cart {
+    width: 100%;
+    padding-bottom: 2em;
+    border-bottom: 1px solid var(--Grayish-blue);
+}
+
+.cart-content--empty {
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    height: auto;
+}
+
+.cart-content--empty p {
+    color: var(--Dark-grayish-blue);
+}
+
+.cart-content--filled {
+    padding: 1em 0px 0.5em 0px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50% 1fr;
+    justify-items: center;
+    height: 90%;
+}
+
+.checkout--button {
+    color: var(--White);
+    background-color: var(--primary-orange);
+    border-radius: 1em;
+    border: none;
+    margin-top: -1em;
+    width: 90%;
+    height: 50%;
+}
+
+
+.cart-content {
+    height: 50%;
+    width: 110%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0px;
+    padding: 0px;
+}
+
+.cart__content--image {
+    height: 85%;
+    border-radius: 0.5em;
+}
+
+.cart__content--price, .cart__content--price2 {
+    display: inline;
+}
+
+.cart__content--price, .cart__content--title {
+    color: var(--Grayish-blue);
+}
+
+.cart__content--description {
+    padding-top: 0.5em;
+    height: 100%;
+}
+
+.cart__content--title {
+    margin: 0px;
+    padding: 0px;
 }
 
 .cart__image {
@@ -180,7 +282,7 @@ header {
     background-color: var(--Light-grayish-blue);
 }
 
-.minus__image, .plus__image, .add-to-cart--botton:hover {
+.minus__image, .plus__image, .cart__image, .add-to-cart--botton:hover {
     cursor: pointer;
 }
 

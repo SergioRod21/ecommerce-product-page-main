@@ -89,11 +89,20 @@
         display: block;
         padding-right: 10%;
     }
+
+    .open-cart__container {
+        width: 60vw;
+        margin-right: 22vw;
+    }
 }
 
 @media screen and (max-width:375px) {
     .back__button, .next__button {
         top: 25%;
+    }
+
+    .open-cart__container {
+        margin-right: 25vw;
     }
 }
 
@@ -102,5 +111,10 @@
     .back__button,
     .next__button {
         top: 23%;
+    }
+
+    .open-cart__container {
+        width: 84vw;
+        margin-right: 25vw;
     }
 }
