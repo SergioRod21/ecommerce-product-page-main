@@ -44,6 +44,18 @@ header {
     text-decoration: none;
 }
 
+
+
+.cart__quantity {
+    position: absolute;
+    right: 0;
+}
+
+.cart__image {
+    position: relative;
+    height: 24px;
+}
+
 .avatar__image {
     height: 3em;
     margin-left: 2.75em;
@@ -168,6 +180,10 @@ header {
     background-color: var(--Light-grayish-blue);
 }
 
+.minus__image, .plus__image, .add-to-cart--botton:hover {
+    cursor: pointer;
+}
+
 .minus__image {
     width: 1em;
 }
@@ -185,13 +201,8 @@ header {
 .add-to-cart--botton img {
     padding-right: 1em;
     width: 1.5em;
-    filter: invert(99%) sepia(100%) saturate(9%) hue-rotate(214deg) brightness(104%) contrast(100%);
 }
 
-
-.cart-icon {
-    filter: invert(99%) sepia(100%) saturate(9%) hue-rotate(214deg) brightness(104%) contrast(100%);
-}
 
 .add-to-cart--botton h3 {
     color: var(--White);

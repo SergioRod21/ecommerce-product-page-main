@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="tablet.css">
   <link rel="stylesheet" href="mobile.css">
   <title>Sneakers</title>
+  <link rel="shortcut icon" href="./images/favicon.png"/>
 </head>
 <body>
   <header>
@@ -24,14 +25,19 @@
     <a href="" class="header__link">Contact</a>
     </div>
     <div class="header__section2">
-      <img src="./images/icon-cart.svg" alt="" class="cart__image">
+      <div class="cart__container">
+        <div class="quantity__container">
+          <h3 class="cart__quantity">0</h3>
+        </div>
+      <img src="./images/carrito-de-compras.png" alt="" class="cart__image">
+      </div>
       <img src="./images/image-avatar.png" alt="" class="avatar__image">
     </div>
   </header>
   <section class="main__container">
     <div class="images__container">
       <div class="back-button__container">
-      <img src="./images/icon-previous.svg" alt="" class="back__button">
+      <img src="./images/icon-previous.svg" alt="" class="back__button" id="back__button">
       </div>
       <img src="./images/image-product-1.jpg" alt="" class="main-image">
       <div class="next-button__container">
@@ -63,12 +69,13 @@
           <img src="./images/icon-plus.svg" class="plus__image" alt="">
         </div>
         <div class="add-to-cart--botton">
-          <img src="./images/icon-cart.svg" alt="" class="cart-icon">
+          <img src="./images/carrito-de-compras.png" alt="" class="cart-icon">
           <h3>Add to cart</h3>
         </div>
       </div>
       </div>
     </div>
   </section>
+  <script src="scripts.js"></script>
 </body>
 </html>
