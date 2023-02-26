@@ -14,6 +14,10 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
+html {
+    position: relative;
+}
+
 body {
     padding: 2em 8%;
 }
@@ -24,6 +28,36 @@ header {
     align-items: center;
     padding-bottom: 2em;
     border-bottom: 1px solid var(--Grayish-blue);
+}
+
+.lightbox, .lightbox__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox .lightbox-images__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    position: relative;
+}
+
+.lightbox__background {
+    opacity: 0.7;
+    background-color: var(--Black);
+    z-index: 0;
+}
+
+.lightbox-images__container {
+    width: 35%;
 }
 
 .hidden {
@@ -170,37 +204,80 @@ header {
     gap: 2em;
 }
 
-.images__container {
+.images__container, .lightbox-images__container  {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.images__container img, .carousel__container img {
+.images__container img, .carousel__container img, .lightbox-images__container img  {
     border-radius: 15px;
 }
 
 
+.lightbox-back-button__container, .lightbox-next-button__container, .lightbox-close-button__container, .back-button__container, .next-button__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 37.5%;
+    z-index: 4;
+    height: 2.5em;
+    width: 2.5em;
+    background-color: var(--White);
+    border-radius: 5em;
+}
 
+.back-button__container, .next-button__container {
+    display: none;
+    top: 45%;
+}
 
-.main-image {
-    position: relative;
-    height: 26em;
-    margin-bottom: 2em;
+.lightbox-back-button__container, .back-button__container {
+    left: 0;
 }
 
 .back__button, .next__button {
     display: none;
+    margin: 0 !important;
 }
 
-.carousel__container {
+.lightbox-next-button__container , .next-button__container {
+    right: 0;
+}
+
+.lightbox-close-button__container {
+    top: 0;
+    right: 0;
+}
+
+.main-image, .lightbox-main-image , .lightbox-main-image__container {
+    width: 26em;
+    margin-bottom: 2em;
+}
+
+.lightbox-main-image__container {
+    width: 92%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-main-image {
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+
+
+.carousel__container, .lightbox-carousel__container {
     display: grid;
     gap: 1.5em;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.min-image {
+.min-image, .lightbox-min-image {
     height: 5.5em;
 }
 
@@ -310,3 +387,6 @@ header {
     color: var(--White);
 }
 
+.hamburger-menu__container {
+    display: none;
+}

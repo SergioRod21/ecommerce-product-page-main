@@ -1,5 +1,6 @@
 @media screen and (max-width:480px) {
 
+
     body {
         padding: 0px;
         margin: 0px;
@@ -36,6 +37,7 @@
     }
 
     .images__container {
+        position: relative;
         width: 100%;
     }
 
@@ -46,20 +48,25 @@
         border-radius: 0px;
     }
 
-    
+    .back-button__container, .next-button__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .back__button, .next__button  {
         display: block;
         position: absolute;
         z-index: 1;
         height: 30px !important;
-        top: 30%;
-        background: #fff;
         background-size: contain;
         border-radius: 5em !important;
     }
 
     .back__button {
-        left: 4%;
+        left: 1%;
     }
 
     .next__button {
@@ -94,6 +101,32 @@
         width: 60vw;
         margin-right: 22vw;
     }
+
+    .hamburger-menu__container {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 3;
+        background-color: white;
+        height: 105vh;
+        width:55vw;
+        padding: 5vh 5vw 0px 5vw;
+    }
+
+    .close-image {
+        margin-top: -5vh;
+        margin-bottom: 5vh;
+        width: 10%;
+    }
+
+    .hamburger-menu__container a {
+        text-decoration: none;
+        color: var(--Black);
+        font-weight: bold;
+        font-size: 20px;
+        padding: 2vh 0px;
+    }
+
 }
 
 @media screen and (max-width:375px) {
@@ -103,6 +136,10 @@
 
     .open-cart__container {
         margin-right: 25vw;
+    }
+    
+    .hamburger-menu__container {
+        height: 100vh;
     }
 }
 
